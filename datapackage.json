@@ -55,7 +55,7 @@
           "type": "string",
           "dimension": true,
           "constraints": {
-            "enum": ["Socal Security Status", "Margins of Error"]
+            "enum": ["Social Security Status", "Margins of Error"]
          }
         }, {
           "name": "Value",
