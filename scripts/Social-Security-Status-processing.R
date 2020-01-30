@@ -18,7 +18,7 @@ source('./scripts/acsHelpers.R')
 ctGeos <- getCTGeos("town")
 # years for which we will process this dataset
 #yearList = c(2015)
-yearList = c(2010:2016)
+yearList = c(2010:2018)
 
 tn = "B19055"
 acsdata <- getACSData(ctGeos, yearList = yearList, table = tn)
@@ -146,7 +146,7 @@ dataset <- dataset %>%
 # Write to File
 write.table(
     dataset,
-    file.path(getwd(), "data", "social-security-status-2016.csv"),
+    file.path(getwd(), "data", "social-security-status-2018.csv"),
     sep = ",",
     row.names = F,
     na = "-9999"
